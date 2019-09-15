@@ -78,7 +78,7 @@ JoyMobilityApp.signInUser(email: "user_email",
 ### Start the first screen
 Now all you have to do is to choose your entry point, it can be a button or a Tableview cell action, or a tab bar item if it an in app integration, or in App delegate if you are using the SDK as a white label product to generate a new standalone mobility app 
 
-- [x] in case of in app integration:
+* in case of in app integration:
 ```swift
     let vc: UIViewController
     do {
@@ -93,7 +93,7 @@ Now all you have to do is to choose your entry point, it can be a button or a Ta
     }
     navigationController?.pushViewController(vc, animated: true)
 ```
-- [x] in case of a standalone App:
+* in case of a standalone App:
 
 in AppDelegate:
 
