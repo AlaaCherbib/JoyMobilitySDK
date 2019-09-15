@@ -10,6 +10,7 @@ Use JoyMobilitySDK to integrate our Carpooling service within your own App.  You
 ![Details](https://github.com/AlaaCherbib/JoyMobilitySDK_DEV/blob/master/doc-assets/details.png)
 ## Requirements
 iOS 11 and above
+
 Sign up to our platform and get a your customer id
 
 ## Installation
