@@ -1,6 +1,6 @@
 # JoyMobilitySDK
 
-[![CI Status](https://img.shields.io/travis/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
+![CI Status](https://api.travis-ci.org/travis-ci/travis-web.svg?branch=master)
 [![Version](https://img.shields.io/cocoapods/v/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
 [![License](https://img.shields.io/cocoapods/l/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
 [![Platform](https://img.shields.io/cocoapods/p/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
@@ -30,12 +30,12 @@ After signing up, you will receive two plist files, one is your GoogleService in
 ### Customise the settings and appearance
 in Configuration.plist you will be able to do the following customisations:
 
-- [x] Enable/Disable sign up module: Depending on your use case, you can choose to use our Login feature and signup your users through our authentication services or you can choose to use your own authentication system, in this case you will have to pass the user infos to the SDK before starting using it. 
-- [x] Enable/Disable pricing: The SDK comes with a pricing feature that suggests fees for sharing the rides. you can enable/disable this feature depending on your needs.
-- [x] Show/Hide an initial app consent screen, this screen shows a customised text that the user will have to accept before using the carpool service. this screen will be only shown once if it is enabled.
-- [x] Set the profile button position: in the first screen which is the rides feed, on the navigation bar will be placed a button that takes the user to his profile/edit profile screen. you can decide to show this button on the LEFT position (in case you don't need to show a back button, e.g showing the view in Tabbar), RIGHT position, or you can decide to hide it completely, possible values are LEFT, RIGHT, NONE. 
-- [x] Set primary color: if you want to edit the primary color that is in the SDK screens, please add a color asset to you assets file (e.g assets.xcassets) and call it 'joy_primary', set the color value and the SDK will use it automatically.
-- [x] Set the navigation bar logo: you will have to add your own navigation bar logo, this will replace the default Joy mobility logo, to do so, add an image asset to your assets file (e.g assets.xcassets) and put in your logo images files, recommended sizes are (154x96, 2x: 308x192, 3x: 462x288)
+* Enable/Disable sign up module: Depending on your use case, you can choose to use our Login feature and signup your users through our authentication services or you can choose to use your own authentication system, in this case you will have to pass the user infos to the SDK before starting using it. 
+* Enable/Disable pricing: The SDK comes with a pricing feature that suggests fees for sharing the rides. you can enable/disable this feature depending on your needs.
+* Show/Hide an initial app consent screen, this screen shows a customised text that the user will have to accept before using the carpool service. this screen will be only shown once if it is enabled.
+* Set the profile button position: in the first screen which is the rides feed, on the navigation bar will be placed a button that takes the user to his profile/edit profile screen. you can decide to show this button on the LEFT position (in case you don't need to show a back button, e.g showing the view in Tabbar), RIGHT position, or you can decide to hide it completely, possible values are LEFT, RIGHT, NONE. 
+* Set primary color: if you want to edit the primary color that is in the SDK screens, please add a color asset to you assets file (e.g assets.xcassets) and call it 'joy_primary', set the color value and the SDK will use it automatically.
+* Set the navigation bar logo: you will have to add your own navigation bar logo, this will replace the default Joy mobility logo, to do so, add an image asset to your assets file (e.g assets.xcassets) and put in your logo images files, recommended sizes are (154x96, 2x: 308x192, 3x: 462x288)
 
 ### Start the SDK
 in the App delegate add the following lines: 
