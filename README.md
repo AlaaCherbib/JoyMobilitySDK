@@ -6,8 +6,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
 
 Use JoyMobilitySDK to integrate our Carpooling service within your own App.  You can also use it to have your own white label Mobility App with just few lines of Code. The SDK is fully written in Swift and is also Obj-C compatible.
-![Feed](https://github.com/AlaaCherbib/JoyMobilitySDK_DEV/blob/master/doc-assets/feed.png)
-![Details](https://github.com/AlaaCherbib/JoyMobilitySDK_DEV/blob/master/doc-assets/details.png)
+![Feed](https://github.com/AlaaCherbib/JoyMobilitySDK/blob/master/doc-assets/feed.png)
+![Details](https://github.com/AlaaCherbib/JoyMobilitySDK/blob/master/doc-assets/details.png)
 ## Requirements
 iOS 11 and above
 
