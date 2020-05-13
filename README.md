@@ -57,10 +57,6 @@ func application(_ application: UIApplication,
         return
     }
 }
-
-func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
-    return JoyMobilityApp.handleJoyDeepLink(with: userActivity)
-}
 ```
 
 ### Authenticate the user if you are disabling the SDK Sign up Module (SKIP THIS STEP IF YOU USE THE SDK'S SIGN UP SCREEN)
