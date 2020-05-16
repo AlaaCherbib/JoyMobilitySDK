@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name                  = 'JoyMobilitySDK'
-s.version = "0.9.8"
+s.version = "0.9.9"
   s.summary               = 'Use the JoyMobilitySDK to integrate mobility services into your own app.'
   s.swift_version         = '5.0'
   s.homepage              = 'https://joy-mobility.com/'
