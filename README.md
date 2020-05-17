@@ -5,7 +5,10 @@
 [![License](https://img.shields.io/cocoapods/l/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
 [![Platform](https://img.shields.io/cocoapods/p/JoyMobilitySDK.svg?style=flat)](https://cocoapods.org/pods/JoyMobilitySDK)
 
-Use JoyMobilitySDK to integrate our Carpooling service within your own App.  You can also use it to have your own white label Mobility App with just few lines of Code. The SDK is fully written in Swift and is also Obj-C compatible.
+Use JoyMobilitySDK to integrate our Carpooling service within your own App (**IN-APP INTEGRATION**). You can also use it to have your own white label Mobility App with just few lines of Code (**STANDALONE APP**). The SDK is fully written in Kotlin.
+
+Do you need support integrating our services or creating your own mobility App? Our team can take care of the whole development and publishing process for you.
+
 ![Feed](https://github.com/AlaaCherbib/JoyMobilitySDK/blob/master/doc-assets/feed.png)
 ![Details](https://github.com/AlaaCherbib/JoyMobilitySDK/blob/master/doc-assets/details.png)
 ## Requirements
@@ -29,13 +32,24 @@ run pod install on the terminal from the Poffile directory, then close the proje
 After signing up, you will receive two plist files, one is your GoogleService info file, which will be used to configure Firebase and Google maps services. this file should never be edited and must be added to your project and belong to your target. The second 'Configuration.plist' file contains your specific keys, customer id, api keys and some config params, add this file as well to your project as it is mandatory to run the SDK.
 
 ### Customise the settings and appearance
-in Configuration.plist you will be able to do the following customisations:
+#### in Configuration.plist you will be able to do the following customisations:
 
 * Enable/Disable sign up module: Depending on your use case, you can choose to use our Login feature and signup your users through our authentication services or you can choose to use your own authentication system, in this case you will have to pass the user infos to the SDK before starting using it. 
+
 * Enable/Disable pricing: The SDK comes with a pricing feature that suggests fees for sharing the rides. you can enable/disable this feature depending on your needs.
+
 * Show/Hide an initial app consent screen, this screen shows a customised text that the user will have to accept before using the carpool service. this screen will be only shown once if it is enabled.
+
 * Set the profile button position: in the first screen which is the rides feed, on the navigation bar will be placed a button that takes the user to his profile/edit profile screen. you can decide to show this button on the LEFT position (in case you don't need to show a back button, e.g showing the view in Tabbar), RIGHT position, or you can decide to hide it completely, possible values are LEFT, RIGHT, NONE. 
+
+* Enable/Disable smart rides recommendations, which suggests rides to the users based on the events they are interested in, like football games or music concerts.
+
+
+
+#### Colors and logo
+
 * Set primary color: if you want to edit the primary color that is in the SDK screens, please add a color asset to you assets file (e.g assets.xcassets) and call it 'joy_primary', set the color value and the SDK will use it automatically.
+
 * Set the navigation bar logo: you will have to add your own navigation bar logo, this will replace the default Joy mobility logo, to do so, add an image asset to your assets file (e.g assets.xcassets) and put in your logo images files, recommended sizes are (154x96, 2x: 308x192, 3x: 462x288)
 
 ### Start the SDK
@@ -59,7 +73,9 @@ func application(_ application: UIApplication,
 }
 ```
 
-### Authenticate the user if you are disabling the SDK Sign up Module (SKIP THIS STEP IF YOU USE THE SDK'S SIGN UP SCREEN)
+### Authenticate the user if you are disabling the SDK Sign up Module
+**N.B:** SKIP THIS STEP IF YOU USE THE SDK'S SIGN UP SCREEN
+
 after the user logs in to his account in your app, please make this call to the authenticate the user for the carpool service:
 ```swift
 JoyMobilityApp.signInUser(email: "user_email",
@@ -72,6 +88,7 @@ JoyMobilityApp.signInUser(email: "user_email",
 ```
 
 ### Start the first screen
+
 Now all you have to do is to choose your entry point, it can be a button or a Tableview cell action, or a tab bar item if it an in app integration, or in App delegate if you are using the SDK as a white label product to generate a new standalone mobility app 
 
 * in case of in app integration:
