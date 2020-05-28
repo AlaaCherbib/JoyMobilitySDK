@@ -71,6 +71,11 @@ func application(_ application: UIApplication,
         return
     }
 }
+
+func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    JoyMobilityApp.didRegisterForRemoteNotification(token: deviceToken)
+}
+
 ```
 
 ### Authenticate the user if you are disabling the SDK Sign up Module
